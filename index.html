@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Website</title>
+    <link rel="icon"
+      href="157-1575410_react-js-logo-png-transparent-png-modified.png"
+      type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/edd0240440.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!--header-->
+            <div class="header-text">
+                <p>Portofolio Website</p>
+                <h1>Hi, I' m <span>Selamet Egie  </span> </h1>
+                <h1><span>Rudiyanto</span></h1>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <h3>Hello, Introduce To Myself! <br><br></h3>
+                    <p>I am a dedicated Information Systems student with extensive experience in the field of organizational management. 
+                        I have strong analytical skills, good communication skills, and the ability to work effectively in a team or independently. 
+                        With my extensive educational background and organizational experience, I am ready to contribute optimally in a dynamic and challenging work environment.</p>
+                     
+                     <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                     </div>
+
+                     <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2020-2023</span><br>Language & Literature, MA Darul Ulum Kalinyamatan, Jepara</li>
+                            <li><span>2023 - Now</span><br>Information Systems, Universitas Islam Nahdaltul Ulama Jepara</li>
+                            
+
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Web Development</li>
+                            <li><span>UI/UX</span><br>Web Designing</li>
+                            <li><span>Data Analyist</span><br>process various types of data to obtain specific information.</li>
+                        </ul>
+                     </div>  <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>3 Year Experience as a Web Developer at It Company (2019-2022)</li>
+                            <li><span>Android Development</span><br>1 Year Experience as a Android Developmentat It Company (2022-2023)</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!---Portfolio Design-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Latest <span>Project</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/burger web.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="img/deign app gojek.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="work">
+                    <img src="img/data analis.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact<span> Us</span></h1>
+                    <p><i class="fa-solid fa-share"></i>egierudiyanto@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i></i>089123456789</p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                    <a href="img/Resume - Selamet Egie Rudiyanto.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Selamet Egie Rudiyanto | All Right Reserved by Tugas UTS</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById('sidemenu');
+        function openmenu(){
+            sidemeu.style.right ="0";
+        }
+        function closemenu(){
+            sidemeu.style.right ="-200px";
+        }
+    </script>
+
+</body>
+</html>
